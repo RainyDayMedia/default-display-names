@@ -139,10 +139,10 @@ class Options {
 
     public function register_settings_page() {
         $parent_slug = 'users.php';
-        $page_title = __('Publicity Names');
-        $menu_title = __('Publicity Names');
+        $page_title = __('Public Displayed Names');
+        $menu_title = __('Public Displayed Names');
         $capability = 'manage_options';
-        $menu_slug = 'publicity-names';
+        $menu_slug = 'public-displayed-names';
         $function = array(
             $this,
             'renderContent'
@@ -165,7 +165,7 @@ class Options {
                 'email' => $user_mail
             ));
         }
-        if ($suffix === 'users_page_publicity-names') {
+        if ($suffix === 'users_page_public-displayed-names') {
             wp_enqueue_script('popup-handler', plugins_url('/substitute-displayname/assets/libs/popup-handler.js'), array('jquery'), false, true);
             wp_enqueue_script('set-names-js', plugins_url('/substitute-displayname/assets/scripts/set-names.js'), array('jquery'), false, true);
             wp_localize_script('set-names-js', 'ajax', array(
@@ -177,9 +177,9 @@ class Options {
     public function renderContent() {
         ?>
         <div class = "wrapp">
-            <h1>Publicity Names</h1>
+            <h1>Public Displayed Names</h1>
             <div class = "table__inner">
-                <h2>Change default Publisity Display Name As:</h2>
+                <h2>Change default Publicly Displayed Name As:</h2>
                 <table class = "form-table display-names-table">
                     <tr>
                         <th>Roles</th>

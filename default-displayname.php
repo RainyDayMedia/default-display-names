@@ -4,7 +4,7 @@ Plugin Name: Default Display Names
 Plugin URI: https://github.com/RainyDayMedia/public-display-names
 Version: 0.2.0
 Description: Changes the default public display name for new and existing users.
-Author: RDMCrew
+Author: Rainy Day Media LLC
 Author URI: https://github.com/RainyDayMedia/
 */
 
